@@ -25,14 +25,26 @@
     }
 
       header {
-        background-color: rgb(30, 36, 31);
+        background-color: rgb(30, 30, 30);
         padding: 30px;
         text-align: center;
         font-size: 35px;
-        color: green;
+        color: white;
       }
 
     </style>
+
+<style>
+  .defaultSpace {
+    margin-bottom: 10px;
+  }
+
+  .originalFlavorSpace {
+    border: 1px solid #4CAF50;
+  }
+
+ </style>
+
   </head>
 
   <body>
@@ -40,7 +52,7 @@
     <h1><br>Rating Every Monster Energy Flavor I've Tried<br><br></h1>
 
     <header>
-      <h2>The Basic Series</h2>
+      <h2><span style = "color:green;font-weight:bold">The Basic Series</span></h2>
     </header>
 
     <table>
@@ -49,15 +61,23 @@
           <th>Comments</th>
         </tr>
         <tr>
-          <td>Original:<br><br><img src="monsterOriginal.png" alt="Original" width="200" height="200"></td>
-          <td>2/10:<br>
+          <td><div class="defaultSpace">Original:</div>
+            <div class="originalFlavorSpace"><img src="monsterOriginal.png" alt="Original" width="200" height="200"></div></td>
+          <td>2/10:
             <dl>
-              <dt>Pros:</dt>
-              <dd>- It has a cool can tab color (neon green)</dd>
-              <br>
+              <style>
+              div {
+                padding: 15px;
+                border: 1px solid #4CAF50;
+              }
+             </style>
+              <div><dt>Pros:</dt>
+              <dd>- It has a cool can tab color (neon green)</dd></div>
+              <div>
               <dt>Cons:</dt>
-              <dd>- Tastes like battery acid mixed with stomach acid</dd>
-            </dl><br>
+              <dd>- Tastes like battery acid mixed with stomach acid</dd></div>
+              </dl>
+            </div>
           <ul>Where to buy Original:
             <li>link 1</li>
             <li>link 2</li>
@@ -65,7 +85,7 @@
           </td>
         </tr>
         <tr>
-          <td>Assault:<br><br><img src="monsterAssault.png" alt="Assault" width="200" height="200"></td>
+          <td><div class="defaultSpace">Assault:</div><div></div><img src="monsterAssault.png" alt="Assault" width="200" height="200"></div></td>
           <td>6/10:<br>
             <dl>
               <dt>Pros: </dt>
@@ -103,7 +123,7 @@
     </table>
       
     <header>
-      <h2>The Ultra Series</h2>
+      <h2><span style = "color:cyan;font-weight:bold">The Ultra Series</span></h2>
     </header>
 
     <table>
@@ -131,35 +151,7 @@
     </table>
 
     <header>
-      <h2>The Java Series</h2>
-    </header>
-    
-    <table>
-      <tr>
-        <th>Picture and Type</th>
-        <th>Comments (automatic +1 for being sugar-free)</th>
-      </tr>
-      <tr>
-        <td>Name:<br><br><img src="monsterName.png" alt="Name" width="200" height="200"></td>
-        <td>x/10:<br>
-          <dl>
-            <dt>Pros:</dt>
-            <dd>- </dd>
-            <dd>- </dd>
-            <dt>Cons:</dt>
-            <dd>- </dd>
-            <dd>- </dd>
-          </dl><br>
-          <ul>Where to buy this flavor:
-            <li>link 1</li>
-            <li>link 2</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-
-    <header>
-      <h2>The Juice Series</h2>
+      <h2><span style = "color:rgb(158, 89, 0);font-weight:bold">The Java Series</span></h2>
     </header>
     
     <table>
@@ -187,7 +179,7 @@
     </table>
 
     <header>
-      <h2>The Rehab Series</h2>
+      <h2><span style = "color:rgb(255, 187, 0);font-weight:bold">The Juice Series</span></h2>
     </header>
     
     <table>
@@ -215,7 +207,7 @@
     </table>
 
     <header>
-      <h2>The Hydro Series</h2>
+      <h2><span style = "color:rgb(255, 255, 0);font-weight:bold">The Rehab Series</span></h2>
     </header>
     
     <table>
@@ -243,7 +235,35 @@
     </table>
 
     <header>
-      <h2>The Dragon Iced Tea Series</h2>
+      <h2><span style = "color:rgb(0, 76, 255);font-weight:bold">The Hydro Series</span></h2>
+    </header>
+    
+    <table>
+      <tr>
+        <th>Picture and Type</th>
+        <th>Comments (automatic +1 for being sugar-free)</th>
+      </tr>
+      <tr>
+        <td>Name:<br><br><img src="monsterName.png" alt="Name" width="200" height="200"></td>
+        <td>x/10:<br>
+          <dl>
+            <dt>Pros:</dt>
+            <dd>- </dd>
+            <dd>- </dd>
+            <dt>Cons:</dt>
+            <dd>- </dd>
+            <dd>- </dd>
+          </dl><br>
+          <ul>Where to buy this flavor:
+            <li>link 1</li>
+            <li>link 2</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <header>
+      <h2><span style = "color:rgb(83, 170, 99);font-weight:bold">The Dragon Iced Tea Series</span></h2>
     </header>
     
     <table>
@@ -305,7 +325,7 @@
 
 
 
-<!--(un)ordered lists, desc lists, padding/margins from css(not br, pull out), div/span, id/classes-->
+<!--(un)ordered lists (yep), desc lists (yep), padding/margins from css(not br, pull out), div/span, id/classes-->
 
 <!--model for individual flavors:
         <tr>
@@ -357,3 +377,19 @@
         </td>
       </tr>
     </table>-->
+
+<!---model for padding
+              <dl>
+              <style>
+              div {
+                padding: 20px;
+                border: 1px solid #4CAF50;
+              }
+             </style>
+              <div><dt>Pros:</dt>
+              <dd>- It has a cool can tab color (neon green)</dd>
+              <br>
+              <dt>Cons:</dt>
+              <dd>- Tastes like battery acid mixed with stomach acid</dd></div>
+              </dl><br>
+            </div>:-->
