@@ -1,5 +1,5 @@
 # HTML
-First HTLM website
+First HTML website
 
 These are my extra items (this is a test):
 1. I worked hard
